@@ -12,7 +12,7 @@ class ApplicationFacade extends Facade
 	const STATE		 	= "application/state";
     
     //API commands
-	const API_TEST		= "commands/api/test";
+	const JSON_TEST		= "commands/json/test";
 	const HTML_TEST		= "commands/html/test";
     
     
@@ -31,7 +31,7 @@ class ApplicationFacade extends Facade
 		$this->registerCommand( ApplicationFacade::STATE,      'StateCommand' );		
 		
 		// API views
-		$this->registerCommand( ApplicationFacade::API_TEST, 'APITest' );
+		$this->registerCommand( ApplicationFacade::JSON_TEST, 'APITest' );
 		$this->registerCommand( ApplicationFacade::HTML_TEST, 'HTMLTest' );
         
 	}	

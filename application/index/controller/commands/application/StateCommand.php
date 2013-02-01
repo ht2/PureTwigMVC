@@ -19,8 +19,8 @@ class StateCommand extends SimpleCommand
         
         //Routing for the user
         $this->routes = array(
-            'api'      =>  ApplicationFacade::API_TEST,
-            'html'      =>  ApplicationFacade::HTML_TEST
+            'html'  =>  ApplicationFacade::HTML_TEST,
+            'json'  =>  ApplicationFacade::JSON_TEST
         );
         
         //Set the current view
