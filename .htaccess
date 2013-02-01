@@ -1,0 +1,11 @@
+php_value max_execution_time 86400
+php_value session.cookie_lifetime 0
+php_value session.gc_maxlifetime 86400
+
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+RewriteRule ^.*$ ./index.php
