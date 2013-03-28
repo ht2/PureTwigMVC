@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Europe/London');
 
-function br( $value )
+function br( $value="" )
 {
 	return $value."\n";
 }
